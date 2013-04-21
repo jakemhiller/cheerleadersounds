@@ -208,7 +208,7 @@ header,
 
 /* line 67, ../sass/_layout.scss */
 .backgroundsize .logo {
-  background-image: url("/images/cheerleader_blue.png");
+  background-image: url("../images/cheerleader_blue.png");
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: 100%;
@@ -218,7 +218,7 @@ header,
 }
 /* line 72, ../sass/_layout.scss */
 .backgroundsize .logo::before {
-  background-image: url("/images/cheerleader_white.png");
+  background-image: url("../images/cheerleader_white.png");
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-background-size: 100%;
