@@ -1,24 +1,30 @@
 ---
 layout: default
 ---
-
-<div class="help">
-  <h1>Help</h1>
-
-  <div class='articles'>
-    {% for item in site.categories.articles limit:40 offset:0 %}
-      <a class="article" href="{{site.root_dir}}{{item.url}}">
-        {% if item.image %}
-          <img src="{{item.image}}" width="200" height="100"/>
-        {% endif %}
-
-        <div class="title">
-          {{item.title}}
-        </div>
-        <div class="descr">
-          {{item.descr}}
-        </div>
-      </a>
+<div class="column column-1">
+  <h2 class="title">SOUNDS</h2>
+  <div class="soundcloud-embed">
+    {% include soundcloud-embed.html %}
+  </div>
+</div>
+<div class="column column-2">
+  <h2 class="title">SHOWS</h2>
+  <div class="show-table">
+    <div class="show-row header">
+      <span class="show-cell-header city-header">CITY</span>
+      <span class="show-cell-header venue-header">VENUE</span>
+      <span class="show-cell-header date-header">DATE</span>
+      <span class="show-cell-header info-header">INFO</span>
+    </div>
+    {% for show in site.posts limit:30 offset:0 %}
+    <div class="show-row">
+      <span class="show-cell city">{{show.city}}</span>
+      <span class="show-cell venue">{{show.venue}}</span>
+      <span class="show-cell date">{{show.show_date}}</span>
+      <span class="show-cell info">
+        <a class="info-link" href="{{show.link}}">TICKETS</a>
+      </span>
+    </div>
     {% endfor %}
   </div>
 </div>

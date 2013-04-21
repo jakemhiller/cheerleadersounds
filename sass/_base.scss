@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+$site-width: 980px;
+
+$columns: 20;
+$column-width: 5;
+$gutter-width: 2;
+$total-width: 100%;
+
+$font-heading: 'Fjalla One', helvetica, arial, sans-serif;
+
+// Typographic properties
+
+$base-font-size:    14px;
+$relative-font-sizing: true;
+$base-line-height:  22px;
+$base-rhythm-unit: $base-line-height / $base-font-size * 1em;
+$base-leader: ($base-line-height - $base-font-size) * 1em / $base-font-size;
+$default-rhythm-border-style: solid;
+$base-font-family: $font-heading;
+
+// Colors
+$font-color:        #efefef;
+$link-color:        #666;
+$background-color:  #000;
+
+@import "compass/reset";
+@import "compass/layout";
+@import "compass";
+
+* { @include box-sizing(border-box); }
+
+// Typography
+
+@include establish-baseline;
+
+h1,h2,h3,h4,h5,h6
+{
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1 { @include adjust-font-size-to(28px); @include adjust-leading-to(1)}
+h2 { @include adjust-font-size-to(24px); @include adjust-leading-to(1)}
+h3 { @include adjust-font-size-to(20px); @include adjust-leading-to(1)}
+h4 { @include adjust-font-size-to(18px); @include adjust-leading-to(1)}
+h5 { @include adjust-font-size-to(14px); @include adjust-leading-to(1)}
+h6 { @include adjust-font-size-to(10px); @include adjust-leading-to(1)}

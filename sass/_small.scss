@@ -1,0 +1,42 @@
+header
+{
+  padding: .5em 0;
+}
+
+.logo
+{
+  width: 100%;
+}
+
+.column-2
+{
+  margin-top: 2em;
+}
+
+.share .share-row
+{
+  width: 100%;
+  .facebook
+  {
+    float: left;
+  }
+}
+
+.row.share
+{
+  margin-bottom: 1.5em;
+  .btn.contact
+  {
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+    top:0;
+    margin-bottom: .7em;
+    text-align: center;
+    @include adjust-font-size-to(30px);
+    height: 2em;
+    line-height:2.1em;
+    padding: 0 .5em;
+  }
+}

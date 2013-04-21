@@ -1,0 +1,26 @@
+// @mixin row-centered($break: 960px) {
+//   margin:0 auto;
+//   padding:0 15px;
+//   @media screen and (max-width:$break) {
+//     max-width: 100%;
+//   }
+// }
+
+@mixin cl-button-style($color:#fff, $bg:$blue) {
+  background-color: $bg;
+  color: $color;
+  @include border-radius(4px);
+}
+
+@mixin cl-button-hover($color:#fff, $bg:$blue) {
+    background-color: darken(saturate($bg, 30%), 10%);
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin cl-button($color:#fff, $bg:$blue) {
+  @include cl-button-style($color, $bg);
+  &:hover {
+    @include cl-button-hover($color, $bg);
+  }
+}
