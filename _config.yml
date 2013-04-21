@@ -9,7 +9,7 @@ prose:
   metadata:
     "_posts/shows": |
       layout: show
-      city: NYC
-      venue: Pianos
-      show_date: May 25
+      city: CITY NAME
+      venue: VENUE NAME
+      show_date: DATE
       link: http://www.google.com
