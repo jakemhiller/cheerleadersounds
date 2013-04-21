@@ -65,12 +65,12 @@ header,
 }
 
 .backgroundsize .logo {
-  background-image: url("/images/cheerleader_blue.png");
+  background-image: url("../images/cheerleader_blue.png");
   background-repeat: no-repeat;
   background-position: center top;
   @include background-size(100%);
   &::before {
-    background-image: url("/images/cheerleader_white.png");
+    background-image: url("../images/cheerleader_white.png");
     background-repeat: no-repeat;
     background-position: center top;
     @include background-size(100%);
