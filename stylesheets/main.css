@@ -411,19 +411,20 @@ header,
     float: left;
   }
 
-  /* line 9, ../sass/_large.scss */
-  .column-full {
-    width: 100%;
-  }
-
-  /* line 14, ../sass/_large.scss */
+  /* line 10, ../sass/_large.scss */
   .column-1 {
     padding-right: 1em;
   }
 
-  /* line 19, ../sass/_large.scss */
+  /* line 15, ../sass/_large.scss */
   .column-2 {
     padding-left: 1em;
+  }
+
+  /* line 19, ../sass/_large.scss */
+  .column-full {
+    width: 100%;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 600px) {
