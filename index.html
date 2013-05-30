@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<div class="column column-1">
+{% assign post_quantity = site.posts | size %}
+<div class="column column-1 {% if post_quantity == 0 %}column-full{% endif %}">
   <h2 class="title">SOUNDS</h2>
   <div class="soundcloud-embed">
     {% include soundcloud-embed.html %}
   </div>
 </div>
+{% if post_quantity != 0 %}
 <div class="column column-2">
   <h2 class="title">SHOWS</h2>
   <div class="show-table">
@@ -30,4 +32,5 @@ layout: default
     {% endfor %}
   </div>
 </div>
+{% endif %}
 

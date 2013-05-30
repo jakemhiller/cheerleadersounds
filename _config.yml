@@ -2,6 +2,8 @@ auto: true
 server: true
 pygments: true
 permalink: none
+future: true
+past: false
 exclude:
 - .gitignore
 - README.md
